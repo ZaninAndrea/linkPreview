@@ -16,4 +16,3 @@ E.g.
 
 ## Style
 If you want to use the pre-rendered HTML you should include [this](https://github.com/ZaninAndrea/linkPreview/blob/master/style.css) css in the page
-
