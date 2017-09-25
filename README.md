@@ -1,4 +1,4 @@
-# Link preview
+# Link preview microservice
 This webserver renders a link preview by scraping the submitted link.
 ![screenshot](screenshot.PNG)
 ## Usage
