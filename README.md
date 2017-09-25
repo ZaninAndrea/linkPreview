@@ -1,2 +1,2 @@
 # linkPreview
-A webserver rending link previews
+A webserver rendering link previews
