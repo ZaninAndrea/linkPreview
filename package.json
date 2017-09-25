@@ -12,7 +12,8 @@
   "dependencies": {
     "express": "^4.15.5",
     "request": "^2.82.0",
-    "cheerio": "^0.22.0"
+    "cheerio": "^0.22.0",
+    "cors": "^2.8.4"
   },
   "engines": {
     "node": "8.x"
