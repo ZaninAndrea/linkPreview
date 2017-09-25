@@ -1,6 +1,6 @@
 # Link preview
 This webserver renders a link preview by scraping the submitted link.
-
+![screenshot](screenshot.PNG)
 ## Usage
 Make a `GET` request to the server [https://clover-hour.glitch.me/](https://clover-hour.glitch.me/) passing link and format (optional) in the URL query. Format can be either json or html, html by default.
 
