@@ -5,6 +5,7 @@
 var express = require('express');
 var app = express();
 const preview = require('./generatePreview.js')
+let total = 0
 
 let cache = []
 // we've started you off with Express, 
@@ -13,9 +14,16 @@ let cache = []
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
 
+app.get("/total", function (request,response){
+  response.send(total.toString());
+})
+
 app.get("/", function (request, response) {
+  total++;
   preview(request.query.link, request.query.format, a => response.send(a) );
 });
+
+
 
 // Simple in-memory store for now
 var dreams = [
