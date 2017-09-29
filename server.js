@@ -2,13 +2,13 @@
 // where your node app starts
 
 // init project
+const extRequest = require("request")
 var express = require('express');
 var cors = require('cors')
 var app = express()
 app.use(cors())
 
 const preview = require('./generatePreview.js')
-let total = 0
 
 let cache = []
 // we've started you off with Express, 
@@ -17,13 +17,15 @@ let cache = []
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
 
-app.get("/total", function (request,response){
-  response.send(total.toString());
-})
-
 app.get("/", function (request, response) {
-  total++;
   preview(request.query.link, request.query.format, a => response.send(a) );
+  
+  const url = 'https://count1up.herokuapp.com/up/linkpreview?secret=537e7782a6379efc5623a2f4bbdb87c6'
+
+  extRequest(url, function(error, response, body) {
+    console.log(body)
+  })
+  
 });
 
 
