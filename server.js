@@ -15,17 +15,18 @@ let cache = []
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
 // http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'));
+
+app.use("/static", express.static("static"));
 
 app.get("/", function (request, response) {
-  preview(request.query.link, request.query.format, a => response.send(a) );
-  
+  preview(request.query.link, request.query.format, a => response.send(a));
+
   const url = 'https://count1up.herokuapp.com/up/linkpreview?secret=537e7782a6379efc5623a2f4bbdb87c6'
 
-  extRequest(url, function(error, response, body) {
+  extRequest(url, function (error, response, body) {
     console.log(body)
   })
-  
+
 });
 
 
