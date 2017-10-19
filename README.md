@@ -13,9 +13,10 @@ E.g.
   "image": "https://cdn-images-1.medium.com/max/1200/1*snMthttokp8m2AWo9dLN7A.jpeg"
 }
 ```
+Checkout a complete example [here](https://codepen.io/andreazanin/pen/MExgoV/)
 
 ## Style
-If you want to use the pre-rendered HTML you should copy [this css](https://github.com/ZaninAndrea/linkPreview/blob/master/style.css),
+If you want to use the pre-rendered HTML you should copy [this css](https://github.com/ZaninAndrea/linkPreview/blob/master/public/style.css),
 or add this row to your `<head>` tag:
 
     <link rel="stylesheet" href="https://linkpreviewer.herokuapp.com/style.css">
