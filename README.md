@@ -15,7 +15,11 @@ E.g.
 ```
 
 ## Style
-If you want to use the pre-rendered HTML you should include [this](https://github.com/ZaninAndrea/linkPreview/blob/master/style.css) css in the page
+If you want to use the pre-rendered HTML you should copy [this css](https://github.com/ZaninAndrea/linkPreview/blob/master/style.css),
+or add this row to your `<head>` tag:
+
+    <link rel="stylesheet" href="https://linkpreviewer.herokuapp.com/style.css">
+
 
 ## Remix
 You can remix this project on glitch
