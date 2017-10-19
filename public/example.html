@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Link Preview Example</title>
+    <link rel="stylesheet" href=" https://linkpreviewer.herokuapp.com/style.css">
+</head>
+<body>
+    
+<div id="example"></div>
+<script>
+
+fetch(' https://linkpreviewer.herokuapp.com/?link=https://goo.gl/epMmfm')
+.then(r => r.text())
+.then(html => document.getElementById('example').innerHTML = html)
+
+
+</script>
+</body>
+</html>
