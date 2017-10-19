@@ -45,7 +45,7 @@ const generatePreview = (url, format, callback) => {
           if (format=="json"){
             callback(JSON.stringify({title:title, description: descr, image:img}))
           }else{
-            const html = `<div class="linkPreviewContainer">
+            const html = `<link rel="stylesheet" href="./style.css"><div class="linkPreviewContainer">
                 <a href="${url}" data-href="${url}" title="${url}" rel="nofollow" target="_blank" class="linkPreviewText">
                     <strong>${title}</strong><br>
                     <em>${descr}</em>${url}</a>
@@ -62,7 +62,7 @@ const generatePreview = (url, format, callback) => {
             callback(JSON.stringify({error:"Url not found"}))
           }
           else{
-            const html = `<div class="linkPreviewContainer">
+            const html = `<link rel="stylesheet" href="./style.css"><div class="linkPreviewContainer">
                 <a href="${url}" data-href="${url}" title="${url}" rel="nofollow" target="_blank" class="linkPreviewText">
                     <strong>${url}</strong><br>
                     <em></em></a>
